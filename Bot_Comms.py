@@ -1,6 +1,8 @@
 # Declaratons
 from utils import *
 from UI import *
+import os
+
 
 server = server()
 client = server.client
@@ -29,7 +31,7 @@ async def on_ready():
     print(messages[0].content)
 
     await startUI(messages[0])
-    exit()
+    os._exit(0)
     
 
 
